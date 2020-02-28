@@ -1,21 +1,25 @@
 .header {
+  padding-top: 5rem;
   min-height: 50vh;
   height: max-content;
   background-color: $primary-low;
-  //   background-image: url(../assets/backgroundsmall.png);
-
-  &__container {
-    // border: 1px solid red;
-    // min-height: 50vh;
-    // height: max-content;
-  }
 
   &__row {
-    // border: 1px solid blue;
+    display: flex;
   }
 
   &__left {
-    // border: 1px solid yellow;
+    @media (max-width: 576px) {
+      order: 2;
+    }
+
+    @media (min-width: 576px) {
+      order: 2;
+    }
+
+    @media (min-width: 768px) {
+      order: 1;
+    }
   }
 
   &__text {
@@ -26,11 +30,16 @@
     @include button;
   }
 
+  &__right {
+    order: 1;
+  }
+
   &__image-one {
     position: relative;
   }
 
   &__image-two {
+    z-index: 2 !important;
     position: absolute;
     top: 20%;
     left: 60%;
@@ -63,11 +72,10 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 0rem;
   }
 
   &__circle {
-    // flex: 1;
     height: 8.7rem;
     width: 8.7rem;
     border-radius: 50%;
@@ -81,7 +89,6 @@
     color: $secondary-low;
     line-height: 2rem;
     text-align: start;
-    // border: 1px solid red;
   }
 }
 
@@ -95,7 +102,6 @@
     flex-flow: column;
     align-items: flex-start;
     justify-content: center;
-    // border: 1px solid red;
   }
 
   &__right {
@@ -111,15 +117,30 @@
   height: max-content;
   background-color: $primary;
 
+  &__row {
+    display: flex;
+  }
+
   &__left {
+    @media (max-width: 576px) {
+      order: 2;
+    }
+
+    @media (min-width: 576px) {
+      order: 2;
+    }
+
+    @media (min-width: 768px) {
+      order: 1;
+    }
+
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
     justify-content: center;
-    // border: 1px solid red;
   }
 
   &__right {
+    order: 1;
     display: flex;
     flex-flow: row;
   }
@@ -133,9 +154,19 @@
   &__right {
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
     justify-content: center;
-    // border: 1px solid red;
+
+    @media (max-width: 576px) {
+      align-items: center;
+    }
+
+    @media (min-width: 576px) {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      align-items: flex-start;
+    }
   }
 
   .btn-default {
@@ -153,11 +184,27 @@
   height: max-content;
   background-color: $primary-low;
 
+  &__row {
+    display: flex;
+  }
+
   &__left {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     justify-content: center;
+
+    @media (max-width: 576px) {
+      order: 2;
+    }
+
+    @media (min-width: 576px) {
+      order: 2;
+    }
+
+    @media (min-width: 768px) {
+      order: 1;
+    }
   }
 
   &__heading {
@@ -191,26 +238,36 @@
   &__right {
     display: flex;
     flex-flow: column;
-    align-items: flex-end;
+
     align-content: center;
     justify-content: space-between;
+
+    order: 1;
+    @media (max-width: 576px) {
+      align-items: center;
+    }
+
+    @media (min-width: 576px) {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      align-items: flex-end;
+    }
   }
 
   &__form-wrapper {
-    // height: 50vh;
     display: flex;
     flex-flow: column;
     align-items: center;
   }
 
   &__form {
-    // height: 50vh;
     display: flex;
     flex-flow: column;
   }
 
   &__input {
-    min-width: 20vw;
     width: max-content;
     font-size: 1.2rem;
     font-family: "Open Sans";
@@ -221,12 +278,23 @@
     border-radius: 0.5rem;
     text-align: start;
     margin: 0.5rem 0rem;
+
+    @media (max-width: 576px) {
+      min-width: 80vw;
+    }
+
+    @media (min-width: 576px) {
+      min-width: 80vw;
+    }
+
+    @media (min-width: 768px) {
+      min-width: 30vw;
+    }
   }
 
   &__input--message {
     min-height: 20vh;
     height: max-content;
-    min-width: 20vw;
     width: max-content;
     font-size: 1.2rem;
     font-family: "Open Sans";
@@ -237,6 +305,18 @@
     border-radius: 0.5rem;
     text-align: start;
     margin: 0.5rem 0rem;
+
+    @media (max-width: 576px) {
+      min-width: 80vw;
+    }
+
+    @media (min-width: 576px) {
+      min-width: 80vw;
+    }
+
+    @media (min-width: 768px) {
+      min-width: 30vw;
+    }
   }
 
   .btn-default {

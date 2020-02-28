@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import NavBar from "../components/navigation"
 import backgroundsmall from "../assets/backgroundsmall.png"
 import art from "../assets/art.png"
 import macbook from "../assets/macbook.png"
@@ -16,11 +17,13 @@ import mockup from "../assets/mockup.png"
 const IndexPage = () => (
   <Layout>
     <SEO title="Hileets" />
+    <NavBar />
     <section className="header d-flex align-items-center">
       <Container className="header__container">
         <Row className="header__row">
           <Col
             className="header__left d-flex flex-column align-items-start justify-content-center"
+            sm={12}
             md={6}
             lg={6}
             xl={6}
@@ -33,8 +36,9 @@ const IndexPage = () => (
             </p>
             <div className="space-1"></div>
             <div className="btn btn-default">Get Started</div>
+            <div className="space-4"></div>
           </Col>
-          <Col className="header__right" md={6} lg={6} xl={6}>
+          <Col className="header__right" sm={12} md={6} lg={6} xl={6}>
             <Image
               className="header__image-one"
               src={backgroundsmall}
@@ -48,8 +52,10 @@ const IndexPage = () => (
 
     <section className="features d-flex align-items-center">
       <Container className="features__container">
+        <div className="space-2"></div>
         <Row className="features__row ">
-          <Col className="features__left" md={6} lg={6} xl={6}>
+          <Col className="features__left" xs={12} sm={12} md={6} lg={6} xl={6}>
+            <div className="space-4"></div>
             <h2>Some features of the app are</h2>
             <div className="space-1"></div>
             <p>
@@ -58,7 +64,7 @@ const IndexPage = () => (
             </p>
             <h3>Learn More..</h3>
           </Col>
-          <Col className="features__right" md={6} lg={6} xl={6}>
+          <Col className="features__right" xs={12} sm={12} md={6} lg={6} xl={6}>
             <div className="features__content-wrapper">
               <div className="features__circle" />
               <div className="features__text">
@@ -79,6 +85,7 @@ const IndexPage = () => (
                 Use anytime, from anywhere on any device securely
               </div>
             </div>
+            <div className="space-4"></div>
           </Col>
         </Row>
       </Container>
@@ -91,7 +98,9 @@ const IndexPage = () => (
             <Image className="familiar__image" src={macbook} fluid />
           </Col>
           <Col className="familiar__right" md={6} lg={6} xl={6}>
+            <div className="space-4"></div>
             <h2>The familiar ease of slack but for finances</h2>
+            <div className="space-1"></div>
             <p>
               Fintrack gives slack inspired finance management. Your expenses
               are categorized in different books so you can compartmentalize
@@ -104,35 +113,41 @@ const IndexPage = () => (
 
     <section className="fintrack d-flex align-items-center">
       <Container className="fintrack__container">
+        <div className="space-4"></div>
         <Row className="fintrack__row">
           <Col className="fintrack__left" md={6} lg={6} xl={6}>
             <h2>Fintrack on the go.</h2>
+            <div className="space-1"></div>
             <p>
               With Fintrack's Mobile First Design, you can open fintrack.app on
               your mobile browser and use it like any other app on your phone
             </p>
           </Col>
           <Col className="fintrack__right" md={6} lg={6} xl={6}>
-            <Image src={mobone} fluid />
-            <Image src={mobtwo} fluid />
+            {/* <Image src={mobone} fluid /> */}
+            {/* <Image src={mobtwo} fluid /> */}
             <Image src={mobthree} fluid />
           </Col>
         </Row>
+        <div className="space-4"></div>
       </Container>
     </section>
 
     <section className="financial d-flex align-items-center">
       <Container className="financial __container">
+        <div className="space-4"></div>
         <Row className="financial__row">
           <Col className="financial__left" md={6} lg={6} xl={6}>
             <Image src={mockup} fluid />
           </Col>
           <Col className="financial__right" md={6} lg={6} xl={6}>
             <h2>We do not analyse your financial data in any way</h2>
+            <div className="space-1"></div>
             <p>We understand the value of privacy. Patreon Coming Soon</p>
             <div className="btn btn-default">Get Started</div>
           </Col>
         </Row>
+        <div className="space-4"></div>
       </Container>
     </section>
 
@@ -173,8 +188,9 @@ const IndexPage = () => (
             <div className="footer__text">Privacy and Terms</div>
             <div className="footer__text">Sign In</div>
           </Col>
-          <Col className="footer__right" md={6} lg={6} xl={6}>
+          <Col className="footer__right" xs={12} sm={12} md={6} lg={6} xl={6}>
             <div className="footer__form-wrapper">
+              <div className="space-2"></div>
               <h2>Get In Touch</h2>
               <form className="footer__form">
                 <input className="footer__input" placeholder="Name" />
@@ -189,9 +205,12 @@ const IndexPage = () => (
             </div>
           </Col>
         </Row>
+        <div className="space-2"></div>
         <Row>
           <Col
             className="d-flex flex-column align-items-center justify-content-center"
+            xs={12}
+            sm={12}
             md={12}
             lg={12}
             xl={12}

@@ -45,6 +45,18 @@ h2 {
   font-weight: 700 !important;
   line-height: 4rem !important;
   color: $secondary-low !important;
+
+  @media (max-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left !important;
+  }
 }
 
 h3 {
@@ -61,4 +73,16 @@ p {
   font-weight: 400 !important;
   line-height: 2.4rem !important;
   color: $secondary-low !important;
+
+  @media (max-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left !important;
+  }
 }

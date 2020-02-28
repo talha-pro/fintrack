@@ -1,0 +1,252 @@
+.header {
+  min-height: 50vh;
+  height: max-content;
+  background-color: $primary-low;
+  //   background-image: url(../assets/backgroundsmall.png);
+
+  &__container {
+    // border: 1px solid red;
+    // min-height: 50vh;
+    // height: max-content;
+  }
+
+  &__row {
+    // border: 1px solid blue;
+  }
+
+  &__left {
+    // border: 1px solid yellow;
+  }
+
+  &__text {
+    color: $accent-three-low !important;
+  }
+
+  .btn-default {
+    @include button;
+  }
+
+  &__image-one {
+    position: relative;
+  }
+
+  &__image-two {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.features {
+  min-height: 70vh;
+  height: max-content;
+  background-color: $primary;
+
+  &__text-wrapper {
+    width: 70%;
+  }
+
+  &__left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  &__right {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  &__circle {
+    // flex: 1;
+    height: 8.7rem;
+    width: 8.7rem;
+    border-radius: 50%;
+    background-color: $primary-low;
+  }
+
+  &__text {
+    flex: 5;
+    font-size: 1.4rem;
+    margin-left: -1rem;
+    color: $secondary-low;
+    line-height: 2rem;
+    text-align: start;
+    // border: 1px solid red;
+  }
+}
+
+.familiar {
+  min-height: 70vh;
+  height: max-content;
+  background-color: $primary;
+
+  &__left {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    // border: 1px solid red;
+  }
+
+  &__right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.fintrack {
+  min-height: 70vh;
+  height: max-content;
+  background-color: $primary;
+
+  &__left {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    // border: 1px solid red;
+  }
+
+  &__right {
+    display: flex;
+    flex-flow: row;
+  }
+}
+
+.financial {
+  min-height: 100vh;
+  height: max-content;
+  background-color: $primary-low;
+
+  &__right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    // border: 1px solid red;
+  }
+
+  .btn-default {
+    @include button;
+  }
+}
+
+.ads {
+  min-height: 50vh;
+  height: max-content;
+}
+
+.footer {
+  min-height: 70vh;
+  height: max-content;
+  background-color: $primary-low;
+
+  &__left {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__heading {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: $accent-one !important;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+  }
+
+  &__icons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    border-radius: 50rem;
+    height: 4rem;
+    width: 4rem;
+    background-color: $secondary-low;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  &__form-wrapper {
+    // height: 50vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &__form {
+    // height: 50vh;
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__input {
+    min-width: 20vw;
+    width: max-content;
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    background-color: $primary;
+    color: $secondary-low;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-align: start;
+    margin: 0.5rem 0rem;
+  }
+
+  &__input--message {
+    min-height: 20vh;
+    height: max-content;
+    min-width: 20vw;
+    width: max-content;
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    background-color: $primary;
+    color: $secondary-low;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-align: start;
+    margin: 0.5rem 0rem;
+  }
+
+  .btn-default {
+    @include button;
+  }
+
+  &__copyright {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    color: $secondary-low;
+  }
+}

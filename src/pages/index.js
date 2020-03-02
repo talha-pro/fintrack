@@ -124,9 +124,9 @@ const IndexPage = () => (
             </p>
           </Col>
           <Col className="fintrack__right" md={6} lg={6} xl={6}>
-            {/* <Image src={mobone} fluid /> */}
-            {/* <Image src={mobtwo} fluid /> */}
-            <Image src={mobthree} fluid />
+            <Image src={mobone} className="fintrack__image" fluid />
+            <Image src={mobtwo} className="fintrack__image" fluid />
+            <Image src={mobthree} className="fintrack__image last-img" fluid />
           </Col>
         </Row>
         <div className="space-4"></div>
@@ -134,11 +134,11 @@ const IndexPage = () => (
     </section>
 
     <section className="financial d-flex align-items-center">
-      <Container className="financial __container">
+      <Container className="financial __container d-flex flex-column justify-content-center">
         <div className="space-4"></div>
         <Row className="financial__row">
           <Col className="financial__left" md={6} lg={6} xl={6}>
-            <Image src={mockup} fluid />
+            <Image src={mockup} className="financial__image" fluid />
           </Col>
           <Col className="financial__right" md={6} lg={6} xl={6}>
             <h2>We do not analyse your financial data in any way</h2>
@@ -167,7 +167,7 @@ const IndexPage = () => (
     <section className="footer d-flex align-items-center">
       <Container className="footer__container">
         <Row className="footer__row">
-          <Col className="footer__left" md={3} lg={3} xl={3}>
+          <Col className="footer__left" xs={12} sm={12} md={3} lg={3} xl={3}>
             <div className="footer__heading">fintrack</div>
             <div className="space-4"></div>
             <div className="footer__text">developed by</div>
@@ -188,7 +188,7 @@ const IndexPage = () => (
             <div className="footer__text">Privacy and Terms</div>
             <div className="footer__text">Sign In</div>
           </Col>
-          <Col className="footer__right" xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Col className="footer__right" md={6} lg={6} xl={6}>
             <div className="footer__form-wrapper">
               <div className="space-2"></div>
               <h2>Get In Touch</h2>

@@ -34,10 +34,24 @@ body {
 }
 
 h1 {
-  font-size: 5.4rem !important;
   font-weight: 700 !important;
-  line-height: 6rem !important;
+
   color: $secondary-low !important;
+
+  @media (max-width: 576px) {
+    font-size: 3.6rem !important;
+    line-height: 5rem !important;
+  }
+
+  @media (min-width: 576px) {
+    font-size: 3.6rem !important;
+    line-height: 5rem !important;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 5.4rem !important;
+    line-height: 6rem !important;
+  }
 }
 
 h2 {

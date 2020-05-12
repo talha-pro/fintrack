@@ -82,7 +82,7 @@ const IndexPage = () => (
             <div className="features__content-wrapper">
               <div className="features__circle" />
               <div className="features__text">
-                Use anytime, from anywhere on any device securely
+                Use anytime, from anywhere on any device securely.
               </div>
             </div>
             <div className="space-4"></div>

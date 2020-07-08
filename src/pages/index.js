@@ -16,7 +16,7 @@ import mockup from "../assets/mockup.png"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Hileets" />
+    <SEO title="Hileet" />
     <NavBar />
     <section className="header d-flex align-items-center">
       <Container className="header__container">
